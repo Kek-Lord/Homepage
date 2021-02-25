@@ -2,6 +2,7 @@ html {
 	background-color: #1c1c1c;
 	color: #CB4042;
 	font-family: iosevka;
+	height: 100vh;
 }
 
 @font-face {
@@ -21,6 +22,7 @@ body.columns {
 	width: 100%;
 	height: 1009px;
 	justify-content: space-evenly;
+	height: 100vh;
 }
 
 div.leftcolumn {
