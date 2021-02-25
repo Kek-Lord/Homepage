@@ -1,0 +1,129 @@
+html {
+	background-color: #1c1c1c;
+	color: #CB4042;
+	font-family: iosevka;
+}
+
+@font-face {
+	font-family: "iosevka";
+	src: url("iosevka-bold.ttf")
+}
+
+div.clock {
+	font-size: 24px;
+	text-shadow: 2px 2px black;
+}
+
+body.columns {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 0;
+	width: 100%;
+	height: 1009px;
+	justify-content: space-evenly;
+}
+
+div.leftcolumn {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0px;
+	Border: 5px solid rgb(255, 127, 39);
+}
+
+div.centercolumn {
+	display: flex;
+	flex-direction: column;
+	flex: 2 1 0px;
+	Border: 5px solid rgb(255, 127, 39);
+	background: url("railroad.jpg");
+	background-size: cover;
+}
+
+header.websitename {
+	text-align: center;
+	font-size: 48px;
+	flex: 1 1 0px;
+}
+
+nav.boxes {
+	display: flex;
+	text-align: center;
+	flex: 2 1 0px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.input_box {
+	border: none;
+	outline: none;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 350px;
+	font-size: 22px;
+	border-radius: 0px 0px 0px 0px;
+	height: 70px;
+	background: #222D32;
+	box-shadow: 0px 4px 5px #171D20;
+	text-align: center;
+	justify-content: left;
+	color:#CB4042;
+  }
+
+div.bookmark {
+	display: flex;
+	font-size: 24px;
+	flex-direction: column;
+	border: #191C1E;
+	border-radius: 3px;
+	box-shadow: 0px 4px 5px #171D20;
+	align-items: flex-start;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #222D32;
+	justify-content: left;
+	width: 175px;
+}
+
+p.bookmarkheading {
+	margin-left: 14px;
+}
+
+li {
+	font-size: 20px;
+	list-style-type: none;
+	padding: 5px;
+	justify-content: left;
+	margin-left: 10px;
+  }
+
+div.bottomcentrebox {
+	flex: 1 1 0px;
+	text-align: center;
+	align-items: flex-end;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-size: 20px;
+}
+
+div.rightcolumn {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 0px;
+	Border: 5px solid rgb(255, 127, 39);
+}
+
+h1 {
+	color: #CB4042;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+a:link {
+	text-decoration: none;
+	color: #CB4042;
+  }
+
+a:visited {
+	text-decoration: none;
+	color: #CB4042;
+  }

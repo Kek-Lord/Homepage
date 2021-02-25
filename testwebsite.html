@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<script src="script.js" defer></script>
+		<title>The Internet Oasis</title>
+		<meta charset="utf-8" name="author" content="Kek Lord">
+		<meta name="description" content="A central location for everything that you can think of available on the Internet">
+		<link rel="shortcut icon" href="Palm-tree.ico" type="image/x-icon">
+	</head>
+	<body class="columns" onload="refreshTime()">
+		<div class="leftcolumn">
+			<p>Filler Text</p>
+		</div>
+		<div class="centercolumn">
+			<header class="websitename">
+				<h1>The Internet Oasis</h1>
+				<div class="clock" id="time"></div>
+				<div id="gSearch" style="display:block;">
+					<form id="textField" class="google" action="https://google.com/search" method="get">
+					  <input class="input_box" type="text" name="q" placeholder="Search with Google">
+					</form>
+			</header>
+			<nav class="boxes">
+				<div class="bookmark">
+					<p class="bookmarkheading">Productivity</p>
+					<li><a href="https://github.com/" target="_blank">GitHub</a></li>
+					<li><a href="https://stackoverflow.com/" target="_blank">StackOverflow</a></li>
+					<li><a href="https://www.wolframalpha.com/" target="_blank">WolframAlpha</a></li>
+					<li><a href="https://www.openoffice.org/" target="_blank">OpenOffice</a></li>
+				</div>
+				<div class="bookmark">
+					<p class="bookmarkheading">Social</p>
+					<li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+					<li><a href="https://twitter.com/home" target="_blank">Twitter</a></li>
+					<li><a href="https://4chan.org/" target="_blank">4chan</a></li>
+					<li><a href="https://www.twitch.tv/" target="_blank">Twitch</a></li>
+				</div>
+				<div class="bookmark">
+					<p class="bookmarkheading">Video</p>
+					<li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+					<li><a href="https://www.twitch.tv/ target="_blank"">Twitch</a></li>
+					<li><a href="https://www.netflix.com/" target="_blank">Netflix</a></li>
+					<li><a href="https://azm.to/check/https://azm.to/" target="_blank">AZM</a></li>
+				</div>
+				<div class="bookmark">
+					<p class="bookmarkheading">Misc</p>
+					<li><a href="https://www.spotify.com/" target="_blank">Spotify</a></li>
+					<li><a href="https://www.deepl.com/translator" target="_blank">DeepL</a></li>
+					<li><a href="https://www.tradingview.com/" target="_blank">TradingView</a></li>
+					<li><a href="https://www.amazon.com/" target="_blank">Amazon</a></li>
+				</div>
+			</nav>
+			<div class="bottomcentrebox">
+				<p>Kek Lord 2021</p>
+			</div>
+		</div>
+			<div class="rightcolumn">
+			<!-- TradingView Widget BEGIN -->
+			<div class="tradingview-widget-container">
+	<div class="tradingview-widget-container__widget"></div>
+	<div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency</span></a> by TradingView</div>
+	<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+	{
+	"colorTheme": "dark",
+	"dateRange": "3M",
+	"showChart": true,
+	"locale": "uk",
+	"width": "100%",
+	"height": "100%",
+	"largeChartUrl": "",
+	"isTransparent": false,
+	"showSymbolLogo": true,
+	"plotLineColorGrowing": "rgba(203,64,66, 1)",
+	"plotLineColorFalling": "rgba(203,64,66, 1)",
+	"gridLineColor": "rgba(66, 66, 66, 1)",
+	"scaleFontColor": "rgba(120, 123, 134, 1)",
+	"belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+	"belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+	"symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+	"tabs": [
+	  {
+		"title": "Indices",
+		"symbols": [
+		  {
+			"s": "FOREXCOM:SPXUSD",
+			"d": "S&P 500"
+		  },
+		  {
+			"s": "FOREXCOM:NSXUSD",
+			"d": "Nasdaq 100"
+		  },
+		  {
+			"s": "FOREXCOM:DJI",
+			"d": "Dow 30"
+		  },
+		  {
+			"s": "INDEX:DEU30",
+			"d": "DAX Index"
+		  },
+		  {
+			"s": "FOREXCOM:UKXGBP",
+			"d": "FTSE 100"
+		  }
+		],
+		"originalTitle": "Indices"
+	  },
+	  {
+		"title": "Commodities",
+		"symbols": [
+		  {
+			"s": "CME_MINI:ES1!",
+			"d": "S&P 500"
+		  },
+		  {
+			"s": "CME:6E1!",
+			"d": "Euro"
+		  },
+		  {
+			"s": "COMEX:GC1!",
+			"d": "Gold"
+		  },
+		  {
+			"s": "NYMEX:CL1!",
+			"d": "Crude Oil"
+		  },
+		  {
+			"s": "NYMEX:NG1!",
+			"d": "Natural Gas"
+		  }
+		],
+		"originalTitle": "Commodities"
+	  },
+	  {
+		"title": "Cryptocurrency",
+		"symbols": [
+		  {
+			"s": "COINBASE:BTCUSD",
+			"d": "Bitcoin"
+		  },
+		  {
+			"s": "COINBASE:ETHUSD",
+			"d": "Ethereum"
+		  },
+		  {
+			"s": "COINBASE:LINKUSD",
+			"d": "Chainlink"
+		  },
+		  {
+			"s": "BINANCE:BNBUSDT",
+			"d": "Binance Coin"
+		  },
+		  {
+			"s": "COINBASE:LTCUSD",
+			"d": "Litecoin"
+		  }
+		]
+	  }
+	]
+  }
+	</script>
+  			</div>
+  			<!-- TradingView Widget END -->
+		</div>
+
+	</body class="columns">
