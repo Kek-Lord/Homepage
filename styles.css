@@ -48,6 +48,7 @@ header.websitename {
 	text-align: center;
 	font-size: 48px;
 	flex: 1 1 0px;
+	text-shadow: 2px 2px black;
 }
 
 nav.boxes {
