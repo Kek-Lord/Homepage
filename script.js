@@ -11,7 +11,7 @@ setInterval(refreshTime, 1000);
 
 
 const select = document.querySelector("select");
-const background = document.querySelector(".leftcolumn, .centercolumn, .rightcolumn");
+const background = document.querySelector(".bookmark");
 
 function update(bgColor, textColor) {
   background.style.backgroundColor = bgColor;
