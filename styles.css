@@ -1,5 +1,5 @@
 html {
-	background-color: #1c1c1c;
+	background-color: #222D32;
 	color: #CB4042;
 	font-family: iosevka;
 }
@@ -137,3 +137,7 @@ a:visited {
 	text-decoration: none;
 	color: #CB4042;
   }
+
+.altStyle {
+	background-color: rgb(218, 201, 166);
+}

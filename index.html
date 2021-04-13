@@ -11,11 +11,9 @@
 	<body class="columns" onload="refreshTime()">
 		<div class="leftcolumn">
 			<h2>Settings</h2>
-			<label for="theme">Select Theme: </label>
-			<select id="theme">
-				<option value="default">Default</option>
-				<option value="Custom">Custom</option>
-			</select>
+			<label for="pageTheme">Select Theme</label>
+			<button onclick="darkTheme()">Dark Mode</button>
+			<button onclick="lightTheme()">Light Mode</button>
 		</div>
 		<div class="centercolumn">
 			<header class="websitename">
@@ -27,7 +25,7 @@
 					</form>
 			</header>
 			<nav class="boxes">
-				<div class="bookmark">
+				<div class="bookmark" id="productivity">
 					<p class="bookmarkheading">Productivity</p>
 					<div class="links">
 						<p><a href="https://github.com/" target="_blank">GitHub</a></p>
@@ -36,7 +34,7 @@
 						<p><a href="https://www.openoffice.org/" target="_blank">OpenOffice</a></p>
 					</div>
 				</div>
-				<div class="bookmark">
+				<div class="bookmark" id="social">
 					<p class="bookmarkheading">Social</p>
 					<div class="links">
 						<p><a href="https://www.reddit.com/" target="_blank">Reddit</a></p>
@@ -45,7 +43,7 @@
 						<p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
 					</div>
 				</div>
-				<div class="bookmark">
+				<div class="bookmark" id="video">
 					<p class="bookmarkheading">Video</p>
 					<div class="links">
 						<p><a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
@@ -54,7 +52,7 @@
 						<p><a href="https://azm.to/check/https://azm.to/" target="_blank">AZM</a></p>
 					</div>
 				</div>
-				<div class="bookmark">
+				<div class="bookmark" id="misc">
 					<p class="bookmarkheading">Misc</p>
 					<div class="links">
 						<p><a href="https://www.spotify.com/" target="_blank">Spotify</a></p>
@@ -67,7 +65,7 @@
 			<div class="bottomcentrebox">
 			</div>
 		</div>
-			<div class="rightcolumn">
+		<div class="rightcolumn">
 			<!-- TradingView Widget BEGIN -->
 			<div class="tradingview-widget-container">
 	<div class="tradingview-widget-container__widget"></div>

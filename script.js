@@ -10,14 +10,18 @@ function refreshTime() {
 setInterval(refreshTime, 1000);
 
 
-const select = document.querySelector("select");
-const background = document.querySelector(".bookmark");
-
-function update(bgColor, textColor) {
-  background.style.backgroundColor = bgColor;
-  background.style.backgroundColor = textColor;
+function darkTheme()
+{
+    var elements = document.querySelectorAll(".bookmark, .leftcolumn, .rightcolumn, .input_box");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor = "rgb(34, 45,50)";
+    }
 }
 
-select.onchange = function() {
-  ( select.value === "default" ) ? update ("rgb(218, 201, 166)","rgb(28, 28, 28)") : update("rgb(28, 28, 28)","rgb(218, 201, 166)")
+function lightTheme()
+{
+    var elements = document.querySelectorAll(".bookmark, .leftcolumn, .rightcolumn, .input_box");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor = "rgb(218, 201, 166)";
+    }
 }
