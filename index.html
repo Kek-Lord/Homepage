@@ -9,12 +9,10 @@
 		<link rel="shortcut icon" href="Palm-tree.ico" type="image/x-icon">
 	</head>
 	<body class="columns" onload="refreshTime()">
-		<div class="leftcolumn">
-			<h2>Settings</h2>
-			<label for="pageTheme">Select Theme</label>
-			<button onclick="darkTheme()">Dark Mode</button>
-			<button onclick="lightTheme()">Light Mode</button>
-		</div>
+
+	<div class="leftcolumn" id="leftcolumn" onclick="openNav()">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nulla laudantium ab cum quibusdam laborum voluptatem, iusto atque animi quam quasi quaerat ipsa officia odio illo maxime facere sint consequatur!</p>
+	</div>
 		<div class="centercolumn">
 			<header class="websitename">
 				<h1>The Internet Oasis</h1>
@@ -23,6 +21,7 @@
 					<form id="textField" class="google" action="https://google.com/search" method="get">
 					  <input class="input_box" type="text" name="q" placeholder="Search with Google">
 					</form>
+				</div>
 			</header>
 			<nav class="boxes">
 				<div class="bookmark" id="productivity">
@@ -65,8 +64,8 @@
 			<div class="bottomcentrebox">
 			</div>
 		</div>
+
 		<div class="rightcolumn">
-			<!-- TradingView Widget BEGIN -->
 			<div class="tradingview-widget-container">
 	<div class="tradingview-widget-container__widget"></div>
 	<div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency</span></a> by TradingView</div>
@@ -170,7 +169,5 @@
   }
 	</script>
   			</div>
-  			<!-- TradingView Widget END -->
 		</div>
-
 	</body class="columns">

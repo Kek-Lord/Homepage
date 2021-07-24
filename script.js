@@ -1,6 +1,5 @@
 var timeDisplay = document.getElementById("time");
 
-
 function refreshTime() {
   var dateString = new Date().toLocaleString();
   var formattedString = dateString.replace(", ", " - ");
@@ -10,18 +9,12 @@ function refreshTime() {
 setInterval(refreshTime, 1000);
 
 
-function darkTheme()
-{
-    var elements = document.querySelectorAll(".bookmark, .leftcolumn, .rightcolumn, .input_box");
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundColor = "rgb(34, 45,50)";
-    }
-}
+var navigationMenu = document.getElementById("leftcolumn")
 
-function lightTheme()
-{
-    var elements = document.querySelectorAll(".bookmark, .leftcolumn, .rightcolumn, .input_box");
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundColor = "rgb(218, 201, 166)";
-    }
+function openNav() {
+  if(navigationMenu.style.opacity == 1) {
+    navigationMenu.style.opacity = 0;
+  } else {
+    navigationMenu.style.opacity = 1;
+  }
 }
