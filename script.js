@@ -8,13 +8,19 @@ function refreshTime() {
 
 setInterval(refreshTime, 1000);
 
+var today = new Date();
+var time = today.getHours();
+var greet;
 
-var navigationMenu = document.getElementById("leftcolumn")
-
-function openNav() {
-  if(navigationMenu.style.opacity == 1) {
-    navigationMenu.style.opacity = 0;
-  } else {
-    navigationMenu.style.opacity = 1;
-  }
+if (time > 18) {
+  greet = 'Good Evening, Anon';
+} else if (time > 12) {
+  greet = 'Good Afternoon, Anon';
+} else if (time > 6) {
+  greet = 'Good Morning, Anon';
+} else if (time > 0) {
+  greet = 'Late Night, Anon?'
 }
+
+var show = document.getElementById('greetingMessage');
+show.textContent = greet;
