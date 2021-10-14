@@ -23,7 +23,6 @@ ul li {
 	position: relative;
 	padding: 12px 8px 12px 40px;
 	list-style-type: none;
-	background: rgb(67, 67, 67);
 	font-size: 18px;
 	transition: 0.2s;
 }
@@ -34,6 +33,7 @@ div.clock {
 }
 
 body.columns {
+	display: flex;
 	flex-flow: row nowrap;
 	margin: 0px;
 	width: 100%;
@@ -46,17 +46,42 @@ h2 {
 	text-align: center;
 }
 
-div.leftcolumn {
-	display: none;
-	flex-direction: column;
-	flex: 1 1 0px;
-	border: 5px solid rgb(255, 127, 39);
-	opacity: 0;
-	transition: opacity 0.75s;
+img.icon-list {
+	position: relative;
+	left: 10px;
 }
 
-div.leftcolumn:hover {
-	opacity: 1;
+img.icon-list:hover {
+	cursor: pointer;
+}
+
+div.leftcolumn {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+div.extraLinksColumn {
+	display: none;
+	width: 0px;
+	height: 100%;
+	background-color: #222D32;
+}
+
+div.leftcolumncontent {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	width: 300px;
+	font-size: 18px;
+	text-align: center;
 }
 
 

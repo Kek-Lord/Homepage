@@ -24,3 +24,16 @@ if (time > 18) {
 
 var show = document.getElementById('greetingMessage');
 show.textContent = greet;
+
+var mini = true;
+function toggleSidebar() {
+  if(mini) {
+    document.getElementById('extraLinksColumn').style.display="flex";
+    document.getElementById('extraLinksColumn').style.width="300px";
+    mini = false;
+  } else {
+    document.getElementById('extraLinksColumn').style.display="none";
+    document.getElementById('extraLinksColumn').style.width="0px";
+    mini = true;
+  }
+}
