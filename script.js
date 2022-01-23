@@ -27,13 +27,20 @@ show.textContent = greet;
 
 var mini = true;
 function toggleSidebar() {
+  document.getElementById('extraLinksColumn').style["animation-duration"]="1s";
+  document.getElementById('extraLinksColumn').style["animation-fill-mode"]="forward";
+  document.getElementById('leftColumnContent').style["animation-duration"]="1s";
+  document.getElementById('leftColumnContent').style["animation-fill-mode"]="forward";
   if(mini) {
-    document.getElementById('extraLinksColumn').style.display="flex";
-    document.getElementById('extraLinksColumn').style.width="300px";
-    mini = false;
+    document.getElementById('extraLinksColumn').style["animation-name"]="expand";
+    document.getElementById('extraLinksColumn').style["width"]="300px";
+    document.getElementById('leftColumnContent').style["animation-name"]="expand";
+    document.getElementById('leftColumnContent').style["width"]="300px";
   } else {
-    document.getElementById('extraLinksColumn').style.display="none";
-    document.getElementById('extraLinksColumn').style.width="0px";
-    mini = true;
+    document.getElementById('extraLinksColumn').style["animation-name"]="collapse";
+    document.getElementById('extraLinksColumn').style["width"]="0px";
+    document.getElementById('leftColumnContent').style["animation-name"]="collapse";
+    document.getElementById('leftColumnContent').style["width"]="0px";
   }
+  mini = !mini;
 }

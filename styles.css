@@ -60,30 +60,39 @@ div.leftcolumn {
 	flex-direction: row;
 	height: 100%;
 	position: fixed;
+	width: 400px;
 	top: 0;
 	left: 0;
 }
 
 div.extraLinksColumn {
-	display: none;
 	width: 0px;
 	height: 100%;
 	background-color: #222D32;
 }
 
-div.leftcolumncontent {
-	display: flex;
+@keyframes expand {
+	from {width: 0px;}
+	to {width: 300px;}
+}
+
+@keyframes collapse {
+	from {width: 300px;}
+	to {width: 0px;}
+}
+
+div.leftColumnContent {
 	flex-direction: column;
+	display: flex;
 	margin: 0;
 	padding: 0;
 	position: fixed;
 	height: 100%;
 	overflow: auto;
-	width: 300px;
+	width: 0px;
 	font-size: 18px;
 	text-align: center;
 }
-
 
 div.centercolumn {
 	display: flex;
@@ -181,10 +190,13 @@ h1 {
 	-webkit-text-stroke-color: black;
 }
 
+h2 {
+	text-shadow: 2px 2px black;
+}
+
 a:link {
 	text-decoration: none;
 	color: #CB4042;
-
   }
 
 a:link:hover {
