@@ -6,14 +6,15 @@
 		<title>The Internet Oasis</title>
 		<meta charset="utf-8" name="author" content="Kek Lord">
 		<meta name="description" content="A central location for everything that you can think of available on the Internet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="Palm-tree.ico" type="image/x-icon">
 	</head>
 	<body class="columns" onload="refreshTime()">
 		<div class="leftcolumn" id="leftcolumn">
 			<div class="extraLinksColumn" id="extraLinksColumn">
 				<div class="leftColumnContent" id="leftColumnContent">
-					<h2>Extra Links</h2>
-					<p class="leftColumnLinks"><a href="https://www.bbc.co.uk/news">News</a></p>					
+					<h2 style="white-space: nowrap; overflow: hidden;">Extra Links</h2>
+					<p class="leftColumnLinks"><a href="https://www.bbc.co.uk/news">News</a></p>
 					<p class="leftColumnLinks"><a href="https://www.reddit.com/r/tech/">Tech</a></p>
 					<p class="leftColumnLinks"><a href="https://uk.finance.yahoo.com/">Stocks</a></p>
 					<p class="leftColumnLinks"><a href="https://coinmarketcap.com/">Crypto</a></p>
@@ -22,17 +23,23 @@
 					<p class="leftColumnLinks"><a href="http://radio.garden/">Radio</a></p>
 				</div>
 			</div>
-		<img src="icon-list.png" height="48px" width="48px" class="icon-list" onclick="toggleSidebar()">
+			<img src="icon-list.png" height="48px" width="48px" class="icon-list" onclick="toggleSidebar()">
+			<div class="settingsButton">
+				<img src="cog.svg" height="48px" width="48px" class="settingsIcon">
+			</div>
 		</div>
 		<div class="centercolumn">
 			<header class="websitename">
 				<h1>The Internet Oasis</h1>
+				<div class="greeting" id="greetingMessage"></div>
 				<div class="clock" id="time"></div>
 				<div id="gSearch" style="display:block;">
 					<form id="textField" class="google" action="https://google.com/search" method="get">
 					  <input class="input_box" type="text" name="q" placeholder="Search with Google">
 					</form>
-				<div class="greeting" id="greetingMessage"></div>
+				<div id="quoteDisplay">
+				</div>
+				<button onclick="newQuote()" onload="newQuote()">New Quote</button>
 				</div>
 			</header>
 			<nav class="boxes">

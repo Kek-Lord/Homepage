@@ -32,6 +32,21 @@ div.clock {
 	text-shadow: 2px 2px black;
 }
 
+#quoteDisplay {
+	display: flex;
+	flex-flow: row nowrap;
+	text-align: center;
+	justify-content: center;
+	width: 1024px;
+	height: 64px;
+	font-size: 24px;
+	margin: auto;
+	margin-top: 16px;
+	background-color: #222D32;
+	box-shadow: 0px 4px 5px #171D20;
+}
+
+
 body.columns {
 	display: flex;
 	flex-flow: row nowrap;
@@ -52,6 +67,31 @@ img.icon-list {
 }
 
 img.icon-list:hover {
+	cursor: pointer;
+}
+
+img.settingsIcon {
+	position: relative;
+	left: -38px;
+	top: 348px;
+}
+
+div.switchSearch {
+    height: 3.5em;
+    width: 3.5em;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    background-color: #1f2326;
+    -webkit-border-top-right-radius: 180px;
+    -webkit-border-bottom-right-radius: 180px;
+    -moz-border-radius-topright: 180px;
+    -moz-border-radius-bottomright: 180px;
+    border-top-right-radius: 180px;
+    border-bottom-right-radius: 180px;
+}
+
+img.settingsIcon {
 	cursor: pointer;
 }
 
@@ -90,7 +130,7 @@ div.leftColumnContent {
 	height: 100%;
 	overflow: auto;
 	width: 0px;
-	font-size: 18px;
+	font-size: 24px;
 	text-align: center;
 }
 
@@ -98,7 +138,6 @@ div.centercolumn {
 	display: flex;
 	flex-direction: column;
 	flex: 2 1 0px;
-	/*border: 5px solid rgb(255, 127, 39);*/
 	box-sizing: border-box;
 	background: url("railroad.jpg");
 	background-size: cover;
@@ -118,7 +157,7 @@ nav.boxes {
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
-	margin-top: 100px;
+	margin-top: 10px;
 }
 
 .input_box {
@@ -138,7 +177,7 @@ nav.boxes {
   }
 
 div.greeting {
-	margin-top: 30px;
+	margin-bottom: 0px;
 }
 
 div.bookmark {
